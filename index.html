@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <label for="">Columns</label>
+    <input id="noOfColumns" type="number">
+    </br></br>
+    <label for="">Rows</label>
+    <input id="noOfRows" type="number">
+    </br></br>
+    <label for="">Evaluate</label>
+    <select name="Operation" id="evaluate">
+        <option name="" id="Add">Add</option>
+        <option name="" id="Multiply">Multiply</option>
+        <option name="" id="Divide">Divide</option>
+        <option name="" id="Subtract">Subtract</option>
+    </select>
+    </br></br>
+    <button class="btn btn-secondary" type="submit" onclick="getTable()">Get Table</button>
+     <table id="eval_table" class="table table-bordered border-dark">
+        <tr></tr>
+     </table>
+     
+</body>
+<script src="evalTable.js"></script>
+</html>
