@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="/bootstrap.css">
+    <style>
+        body
+        {
+            background: linear-gradient(to left, rgba(68, 136, 255, 0.8), rgba(17, 34, 68, 0.8)) no-repeat fixed;
+            background-size: cover;
+        }
+        button{
+            background: linear-gradient(to left, rgba(68, 136, 255, 0.8), rgba(17, 34, 68, 0.8)) no-repeat fixed;
+        }
+    </style>
 </head>
 <body>
-    <label for="">Columns</label>
-    <input id="noOfColumns" type="number">
-    </br></br>
-    <label for="">Rows</label>
-    <input id="noOfRows" type="number">
-    </br></br>
-    <label for="">Evaluate</label>
-    <select name="Operation" id="evaluate">
-        <option name="" id="Add">Add</option>
-        <option name="" id="Multiply">Multiply</option>
-        <option name="" id="Divide">Divide</option>
-        <option name="" id="Subtract">Subtract</option>
-    </select>
-    </br></br>
-    <button class="btn btn-secondary" type="submit" onclick="getTable()">Get Table</button>
-     <table id="eval_table" class="table table-bordered border-dark">
-        <tr></tr>
-     </table>
-     
+    <h1 class="text-center text-light">EVALUATION TABLE</h1><hr>
+    <div class="input-group-vertical w-25 mx-auto pt-3">
+        <input class="form-control rounded" id="noOfColumns" type="tel" placeholder="Columns">&nbsp;&nbsp;
+        <input class="form-control rounded" id="noOfRows" type="tel" placeholder="Rows">&nbsp;&nbsp;
+        <select class="form-control rounded" name="Operation" id="evaluate">&nbsp;&nbsp;
+            <option value="">Evaluate</option>
+            <option name="" id="Add">Add</option>
+            <option name="" id="Multiply">Multiply</option>
+            <option name="" id="Divide">Divide</option>
+            <option name="" id="Subtract">Subtract</option>
+        </select><br>
+        <button class="btn form-control" type="submit" onclick="getTable()">Get Table</button>
+    </div>
+    <div class="row m-5" id="eval_table"></div>
 </body>
-<script src="evalTable.js"></script>
+<script src="index.js"></script>
 </html>
